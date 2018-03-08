@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="obfc.min.js"></script>
+    <script src="entrel.min.js"></script> 
+    <script src="animation.min.js"></script>	
+    <title>obfc.js Example</title>
+    <style>
+        /* The navigation bar */
+        .navbar {
+            position: fixed; /* Set the navbar to fixed position */
+            bottom: 0; /* Position the navbar at the bottom of the page */
+            width: 100%; /* Full width */
+            margin-bottom: 10px;
+            border: 1px solid #e7e7e7;
+            background-color: #f3f3f3;
+            opacity: 0.1;
+            cursor: pointer;
+        }
+        .navbar:hover{
+            opacity: 1.0;
+        }
+
+        .navbar ul li a {
+            display: block;           
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            float: left;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #ccc9c9;
+        }
+
+        ul.horizontal {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar" class="navbar" style="display:none">
+        <ul class="horizontal">
+            <li><a id="pre">Previous</a></li>
+            <li><a id="next">Next</a> </li>
+            <li><a id="show">Show All</a> </li>
+            <li><a id="hide">Hide All</a> </li>
+            <li><a id="start">Start Animation</a> </li>
+            <li><a id="stop">Stop Animation</a> </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="right">
+            <div id="desc"></div>
+        </div>
+        <div class="left">
+            <svg id="demo" width="750" height="450">
+
+            </svg>
+        </div>
+    </div>
+	
+    <script>
+        onclick_enabled = false;
+        prepare_SVG("demo");
+        var object1 = add_theObject(new Entity(300, 350, 0.75, "Books", [null, null, null, null, null, "BookID(PK)", "Title"], 16));
+        var object2 = add_theObject(new Entity(65, 150, 0.75, "Authors", [null, "AuthorID(PK)", "AuthorName", "AuthorSurname"], 16));
+        var object3 = add_theObject(new Entity(300, 150, 0.75, "Types", [null, "TypeID(PK)", "TypeName"], 16));
+        var object4 = add_theObject(new Entity(500, 150, 0.75, "Publishers", [null, "PublisherID(PK)", "PublisherName", "Location"], 16));
+        var object5 = add_theObject(new Decision(65, 250, 0.75, ["R1"], 12));
+        var object6 = add_theObject(new Decision(300, 250, 0.75, ["R2"], 12));
+        var object7 = add_theObject(new Decision(500, 250, 0.75, ["R3"], 12));
+
+        var o_line1 = draw_theLine(new FlatLine(object2, object5, null, null, "N"));
+        var o_line2 = draw_theLine(new FlatLine(object5, object1, 1, 2, "N"));
+        var o_line3 = draw_theLine(new FlatLine(object3, object6, null, null, "N"));
+        var o_line4 = draw_theLine(new FlatLine(object6, object1, null, null, "N"));
+        var o_line5 = draw_theLine(new FlatLine(object4, object7, null, null, "N"));
+        var o_line6 = draw_theLine(new FlatLine(object7, object1, 1, 3, "1"));
+
+        var groups = [object1, [object5, object2], [o_line1, o_line2], [object6, object3], [o_line3, o_line4], [object7, object4], [o_line5, o_line6]];
+        prepareClassforAnimation(groups);
+        initializeAnimation(groups.length - 1);
+    </script>
+
+    
+</body>
+</html>
