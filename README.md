@@ -56,7 +56,12 @@ prepareClassforAnimation method prepares objects for animation. initializeAnima
 
 Click for an <a href="https://www.e-adys.com/genel/entrel-js-creating-entity-relationship-diagrams-with-javascript-and-svg/" target="_blank" rel="noopener">example</a>.
 
-#Licence
+# Publications
+<b>Object-based Entity Relationship Diagram Drawing Library: EntRel.JS.</b> Uzun, E.; Yerlikaya, T.; and Kırat, O. In 7th International Scientific Conference “TechSys 2018” – Engineering, Technologies and Systems, Technical University of Sofia, Plovdiv Branch May 17-19, pages 114-119, 2018. 
+
+<a href="https://www.e-adys.com/yayinlar/" target="_blank">Click for bibtex, downloads, all publications...</a>
+
+# Licence
 Copyright (c) 2018 Erdinç Uzun
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
