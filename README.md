@@ -2,7 +2,7 @@
 entrel.js is Javascript Library for creating ERDs with simple Javascript methods. This library is built on the obfc.js library. 
 
 # Usage
-Import <a href="https://www.e-adys.com/obfc-js/object-based-flow-charts-obfc-js/" target="_blank" rel="noopener">obfc</a>, entrel and <a href="https://www.e-adys.com/web_tasarimi_programlama/animation-for-your-web-pages/" target="_blank" rel="noopener">animation</a> libraries to your web page.
+Import <a href="https://erdincuzun.com/obfc-js/object-based-flow-charts-obfc-js/" target="_blank" rel="noopener">obfc</a>, entrel and <a href="https://erdincuzun.com/web_tasarimi_programlama/animation-for-your-web-pages/" target="_blank" rel="noopener">animation</a> libraries to your web page.
 
 ```javascript
 <script src="obfc.min.js"></script>
@@ -54,12 +54,12 @@ For creating animations, you can group the objects using an array. if two object
 
 prepareClassforAnimation method prepares objects for animation. initializeAnimation method starts animation. 
 
-Click for an <a href="https://www.e-adys.com/genel/entrel-js-creating-entity-relationship-diagrams-with-javascript-and-svg/" target="_blank" rel="noopener">example</a>.
+Click for an <a href="https://erdincuzun.com/genel/entrel-js-creating-entity-relationship-diagrams-with-javascript-and-svg/" target="_blank" rel="noopener">example</a>.
 
 # Publications
 <b>Object-based Entity Relationship Diagram Drawing Library: EntRel.JS.</b> Uzun, E.; Yerlikaya, T.; and Kırat, O. In 7th International Scientific Conference “TechSys 2018” – Engineering, Technologies and Systems, Technical University of Sofia, Plovdiv Branch May 17-19, pages 114-119, 2018. 
 
-<a href="https://www.e-adys.com/yayinlar/" target="_blank">Click for bibtex, downloads, all publications...</a>
+<a href="https://erdincuzun.com/yayinlar/" target="_blank">Click for bibtex, downloads, all publications...</a>
 
 # Licence
 Copyright (c) 2018 Erdinç Uzun
